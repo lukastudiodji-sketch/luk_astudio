@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional videography services for music videos, weddings, commercials and more. Capturing moments that move.">
+    <meta name="keywords" content="videography, video production, wedding films, music videos, commercial videography">
+    <meta property="og:title" content="Reel Vision | Professional Videography">
+    <meta property="og:description" content="Professional videography services capturing moments that move.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.reelvision.com">
+    <meta property="og:image" content="https://www.reelvision.com/images/social-share.jpg">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Reel Vision | Professional Videography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for video hover effects */
+        .video-item:hover .play-icon {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .video-item:hover .video-thumbnail {
+            transform: scale(1.03);
+        }
+        .video-thumbnail {
+            transition: transform 0.3s ease;
+        }
+        .play-icon {
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOURID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YOURID');
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900 bg-opacity-90 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">LUKASTUDIO</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Home</a>
+                        <a href="#portfolio" class="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Portfolio</a>
+                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Services</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">About</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:text-purple-400 transition">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Home</a>
+                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Portfolio</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Services</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">About</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Capturing <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Moments</span> That Move
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-lg">
+                        Professional reel videography services to showcase your brand, event, or creative vision with cinematic quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#portfolio" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-medium hover:from-purple-700 hover:to-pink-700 transition transform hover:scale-105">
+                            View Work
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border border-purple-500 text-purple-400 rounded-full font-medium hover:bg-purple-900 hover:bg-opacity-30 transition transform hover:scale-105">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-6 -left-6 w-full h-full border-2 border-purple-500 rounded-lg opacity-50"></div>
+                        <div class="relative rounded-lg overflow-hidden shadow-2xl">
+                            <video autoplay loop muted playsinline class="w-full">
+                                <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-dancing-under-neon-lights-1230-large.mp4" type="video/mp4">
+                            </video>
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Recent <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Work</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Explore my latest reel videography projects showcasing different styles and techniques.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video Item 1 -->
+                <div class="video-item relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <div class="video-thumbnail relative overflow-hidden h-64">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/OG02B2lhwQo?autoplay=0&controls=0&showinfo=0&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl font-semibold">Short Movies</h3>
+                        <p class="text-gray-300 text-sm">Artist: The Neon Dreams</p>
+                    </div>
+                </div>
+                
+                <!-- Video Item 2 -->
+                <div class="video-item relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <div class="video-thumbnail relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wedding Film" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center play-icon">
+                            <i class="fas fa-play text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl font-semibold">Wedding Film</h3>
+                        <p class="text-gray-300 text-sm">Sarah & Michael</p>
+                    </div>
+                </div>
+                
+                <!-- Video Item 3 -->
+                <div class="video-item relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <div class="video-thumbnail relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1552664199-fd31f7431a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Commercial" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center play-icon">
+                            <i class="fas fa-play text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl font-semibold">Product Commercial</h3>
+                        <p class="text-gray-300 text-sm">Client: Luxe Watches</p>
+                    </div>
+                </div>
+                
+                <!-- Video Item 4 -->
+                <div class="video-item relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <div class="video-thumbnail relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Event Coverage" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center play-icon">
+                            <i class="fas fa-play text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl font-semibold">Corporate Event</h3>
+                        <p class="text-gray-300 text-sm">Tech Conference 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Video Item 5 -->
+                <div class="video-item relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <div class="video-thumbnail relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a3fddba6f3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Short Film" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center play-icon">
+                            <i class="fas fa-play text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl font-semibold">Short Film</h3>
+                        <p class="text-gray-300 text-sm">"The Last Sunset"</p>
+                    </div>
+                </div>
+                
+                <!-- Video Item 6 -->
+                <div class="video-item relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <div class="video-thumbnail relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Travel Reel" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center play-icon">
+                            <i class="fas fa-play text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl font-semibold">Travel Reel</h3>
+                        <p class="text-gray-300 text-sm">Bali Adventure</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-6 py-3 border border-purple-500 text-purple-400 rounded-full font-medium hover:bg-purple-900 hover:bg-opacity-30 transition">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Services</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Comprehensive videography services tailored to your creative needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-purple-900 bg-opacity-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-film text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Music Videos</h3>
+                    <p class="text-gray-300 mb-4">High-energy, creative music video production that captures the essence of your sound and brand.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Concept development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Professional lighting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> 4K resolution</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Color grading</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-purple-900 bg-opacity-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Wedding Films</h3>
+                    <p class="text-gray-300 mb-4">Cinematic wedding videos that beautifully document your special day with emotion and artistry.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Full day coverage</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Highlight reel</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Documentary style</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Drone footage</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-purple-900 bg-opacity-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Commercial Work</h3>
+                    <p class="text-gray-300 mb-4">Professional commercial videography that showcases your product or brand with maximum impact.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Product showcases</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Brand storytelling</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Social media content</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Motion graphics</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contact" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-medium hover:from-purple-700 hover:to-pink-700 transition transform hover:scale-105">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg">
+                        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                            <source src="images/86241da17fa03f41.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Me</span></h2>
+                    <p class="text-gray-300 mb-6">
+                        With over 8 years of experience in the videography industry, I specialize in creating compelling visual stories that resonate with audiences. My passion lies in capturing authentic moments and transforming them into cinematic experiences.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        I've worked with a diverse range of clients, from independent musicians to Fortune 500 companies, always bringing creativity, technical expertise, and a unique perspective to every project.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-award text-purple-400 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">25+ Awards</h4>
+                                <p class="text-gray-400 text-sm">International recognition</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-video text-purple-400 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">300+ Projects</h4>
+                                <p class="text-gray-400 text-sm">Completed successfully</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe text-purple-400 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Worldwide</h4>
+                                <p class="text-gray-400 text-sm">Available for travel</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-purple-400 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">100+ Clients</h4>
+                                <p class="text-gray-400 text-sm">Satisfied customers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/luk_astudio?igsh=MWI3eGx5bjB0MG5ybA%3D%3D&utm_source=qr" target="_blank" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-purple-600 flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-600 flex items-center justify-center transition">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-red-600 flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-blue-400 flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Client <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Testimonials</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">What my clients say about working with me.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-purple-400 text-sm">Music Artist</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">
+                        "Working with this videographer was transformative for my music career. The video perfectly captured the emotion of my song and helped it go viral!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-purple-400 text-sm">Marketing Director</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">
+                        "Our product launch video exceeded all expectations. The creative approach and technical execution resulted in a 40% increase in engagement."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Emily Rodriguez</h4>
+                            <p class="text-purple-400 text-sm">Bride</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">
+                        "Our wedding video is a treasure we'll cherish forever. The videographer captured all the special moments so beautifully - we cry every time we watch it!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Touch</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Ready to bring your vision to life? Let's collaborate on your next project.</p>
+            </div>
+            
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-50 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-300">lukastudiodji@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-50 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-300">+971 52 723 4032</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-50 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Studio</h4>
+                                <p class="text-gray-300">123 Creative Lane, Dubai, UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mt-12 mb-6">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/lukastudio" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-purple-600 flex items-center justify-center transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-blue-600 flex items-center justify-center transition">
+                            <i class="fab fa-vimeo-v text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-red-600 flex items-center justify-center transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-gray-700 hover:bg-blue-400 flex items-center justify-center transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="space-y-6" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="What's this about?">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Tell me about your project"></textarea>
+                        </div>
+                        <a href="#" class="w-full px-6 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition transform hover:scale-105 flex justify-center">
+                            Get in Touch via WhatsApp
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start mb-4 md:mb-0">
+                    <span class="text-xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">LUKASTUDIO</span>
+                </div>
+                <div class="flex justify-center md:justify-end space-x-6">
+                    <a href="https://instagram.com/lukastudio" target="_blank" class="text-gray-400 hover:text-purple-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-vimeo-v"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-400 transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-300 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center md:text-left">
+                <p class="text-gray-400 text-sm">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Lukastudio. All rights reserved. 
+                    <a href="#" class="text-purple-400 hover:underline ml-2">Privacy Policy</a>
+                    <span class="mx-2">•</span>
+                    <a href="#" class="text-purple-400 hover:underline">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90">
+        <div class="relative w-full max-w-4xl">
+            <button id="close-modal" class="absolute -top-12 right-0 text-white text-3xl hover:text-purple-400 transition">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="aspect-w-16 aspect-h-9">
+                <video id="modal-video" controls class="w-full">
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Video modal functionality
+        const videoModal = document.getElementById('video-modal');
+        const modalVideo = document.getElementById('modal-video');
+        const closeModal = document.getElementById('close-modal');
+        
+        // Sample video URLs (replace with your actual video URLs)
+        const videoSources = [
+            'https://assets.mixkit.co/videos/preview/mixkit-woman-dancing-under-neon-lights-1230-large.mp4',
+            'https://assets.mixkit.co/videos/preview/mixkit-couple-getting-married-on-a-beach-4064-large.mp4',
+            'https://assets.mixkit.co/videos/preview/mixkit-wristwatch-on-a-table-4829-large.mp4',
+            'https://assets.mixkit.co/videos/preview/mixkit-conference-room-with-tables-chairs-and-people-4380-large.mp4',
+            'https://assets.mixkit.co/videos/preview/mixkit-man-and-woman-sitting-on-a-bench-talking-4376-large.mp4',
+            'https://assets.mixkit.co/videos/preview/mixkit-tropical-beach-with-blue-sky-1382-large.mp4'
+        ];
+        
+        // Add click event to all video items
+        document.querySelectorAll('.video-item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                videoModal.classList.remove('hidden');
+                modalVideo.src = videoSources[index];
+                modalVideo.play();
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            videoModal.classList.add('hidden');
+            modalVideo.pause();
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close modal when clicking outside
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.classList.add('hidden');
+                modalVideo.pause();
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=badraldenshalgen/my-website" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
